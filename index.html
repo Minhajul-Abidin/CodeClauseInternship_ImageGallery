@@ -11,17 +11,40 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
   </head>
   <body>
-    <div class="container flex space-x-7">
-      <button class="btn btn-outline">Show All</button>
-      <button class="btn btn-outline">Show All</button>
-      <button class="btn btn-outline">Show All</button>
-      <button class="btn btn-outline">Show All</button>
-      <button class="btn btn-outline">Show All</button>
-      <button class="btn btn-outline">Show All</button>
-      <button class="btn btn-outline">Show All</button>
+    <div class="container">
+      <div class="flex-box">
+        <button
+          class="btn btn-outline btn-sm btn-info btn-active"
+          data-name="all"
+        >
+          Show All
+        </button>
+        <button class="btn btn-outline btn-sm btn-info" data-name="phones">
+          Phones
+        </button>
+        <button class="btn btn-outline btn-sm btn-info" data-name="clothes">
+          Clothes
+        </button>
+        <button class="btn btn-outline btn-sm btn-info" data-name="shoes">
+          Shoes
+        </button>
+        <button class="btn btn-outline btn-sm btn-info" data-name="toys">
+          Toys
+        </button>
+        <button class="btn btn-outline btn-sm btn-info" data-name="watches">
+          Watches
+        </button>
+        <button class="btn btn-outline btn-sm btn-info" data-name="socks">
+          Socks
+        </button>
+      </div>
+      <!-- Image Cards -->
+      <div class="filter-cards">
+        <div class="card flex-box"></div>
+      </div>
     </div>
   </body>
 </html>
