@@ -15,29 +15,35 @@
   </head>
   <body>
     <div class="">
-      <div class="flex justify-center items-center gap-4 flex-wrap p-4">
-        <button
-          class="btn btn-outline btn-sm btn-info btn-active"
-          data-name="all"
-        >
+      <!-- 
+          1 => Show All
+          2 => Phones
+          3 => Clothes
+          4 => Shoes
+          5 => Toys
+          6 => Watches
+          7 => Socks
+         -->
+      <div class="buttons flex justify-center items-center gap-4 flex-wrap p-4">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="1">
           Show All
         </button>
-        <button class="btn btn-outline btn-sm btn-info" data-name="phones">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="2">
           Phones
         </button>
-        <button class="btn btn-outline btn-sm btn-info" data-name="clothes">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="3">
           Clothes
         </button>
-        <button class="btn btn-outline btn-sm btn-info" data-name="shoes">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="4">
           Shoes
         </button>
-        <button class="btn btn-outline btn-sm btn-info" data-name="toys">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="5">
           Toys
         </button>
-        <button class="btn btn-outline btn-sm btn-info" data-name="watches">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="6">
           Watches
         </button>
-        <button class="btn btn-outline btn-sm btn-info" data-name="socks">
+        <button class="btn btn-outline btn-sm btn-info" data-btn="7">
           Socks
         </button>
       </div>
@@ -47,11 +53,12 @@
       >
         <!-- Grid -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4 gap-4"
+          class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4 gap-4"
         >
           <!-- Cards -->
           <div
-            class="rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            class="main-card rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            data-card="4"
           >
             <div class="p-5 flex flex-col">
               <div class="rounded-xl overflow-hidden">
@@ -60,7 +67,7 @@
                   alt=""
                 />
               </div>
-              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes</h5>
+              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes 1</h5>
               <p class="mt-3 text-slate-500 text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tempore, repellat.
@@ -70,7 +77,8 @@
           </div>
 
           <div
-            class="rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            class="main-card rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            data-card="4"
           >
             <div class="p-5 flex flex-col">
               <div class="rounded-xl overflow-hidden">
@@ -79,7 +87,7 @@
                   alt=""
                 />
               </div>
-              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes</h5>
+              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes 2</h5>
               <p class="mt-3 text-slate-500 text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tempore, repellat.
@@ -89,7 +97,8 @@
           </div>
 
           <div
-            class="rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            class="main-card rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            data-card="4"
           >
             <div class="p-5 flex flex-col">
               <div class="rounded-xl overflow-hidden">
@@ -98,7 +107,7 @@
                   alt=""
                 />
               </div>
-              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes</h5>
+              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes 3</h5>
               <p class="mt-3 text-slate-500 text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tempore, repellat.
@@ -108,7 +117,8 @@
           </div>
 
           <div
-            class="rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            class="main-card rounded-xl shadow-lg border-solid border-2 border-gray-300"
+            data-card="4"
           >
             <div class="p-5 flex flex-col">
               <div class="rounded-xl overflow-hidden">
@@ -117,7 +127,7 @@
                   alt=""
                 />
               </div>
-              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes</h5>
+              <h5 class="text-2xl font-medium mt-3 text-slate-800">Shoes 4</h5>
               <p class="mt-3 text-slate-500 text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tempore, repellat.
